@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Voluntaryism.me</title>
+        <style>{% include style.css %} </style>
+    </head>
+    <body>
+
+      <div class="container">
+        <header>
+          {% include header.html %}
+        </header>
+
+        <main>
+
+          {% for post in collections.post reversed %}
+            <article>
+            <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+            <p class="date">{{ post.date | date: "%b %d, %Y" }}</p>
+            {{ post.data.page.excerpt }}
+            <a href="{{ post.url }}">read more</a>
+            </article>
+          {% endfor %}
+
+        </main>
+
+        <aside>
+          <div class="welcome">
+              {% include welcome.html %}
+          </div>
+        </aside>
+
+        <footer> {% include footer.html %}</footer>
+      </div>
+
+    </body>
+</html>

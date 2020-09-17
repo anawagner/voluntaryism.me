@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Voluntaryism.me</title>
+        <style>body {
+    width: 100%;
+    font: .9em/1.2 Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    margin: 0;
+}
+@media (min-width: 40em) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0,1fr));
+        grid-gap: 20px;
+    }
+
+    header {
+      grid-column: 1 / 13;
+      grid-row: 1;
+    }
+
+    main {
+      grid-column: 1 / 8;
+      grid-row: 2;
+    }
+
+    aside {
+      grid-column: 8 / 13;
+      grid-row: 2;
+      padding-right: 25px;
+    }
+
+    footer {
+      grid-column: 1 / 13;
+      grid-row: 3;
+    }
+}
+
+header {
+    padding: 10px;
+    border-bottom: 2px solid #c9c9c9;
+}
+footer {
+    padding: 10px;
+    border-top: 2px solid #c9c9c9;
+    background: gainsboro;
+    color: dimgray;
+}
+
+main {
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+article {
+  border-bottom: 1px dotted gainsboro;
+}
+article h2 {
+  margin: 20px 0 5px 0;
+}
+.date {
+  font-size: 14px;
+  color: silver;
+  margin: 0;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-section {
+  height: 100%;
+}
+
+aside {
+
+}
+.welcome {
+  padding: 10px;
+  background: gainsboro;
+  color: dimgray;
+  margin: 10px;
+  border: 2px solid darkgray;
+}
+
+/* LINKS */
+a {
+  outline: none;
+  text-decoration: none;
+}
+a:link {
+  color: slategray;
+}
+a:visited {
+  color: lightslategray;
+}
+a:focus {
+  color: #fff;
+  background-color: silver;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  background-color: silver;
+  text-decoration: none;
+}
+a:active {
+  color: yellow;
+  background-color: gray;
+}
+</style>
+    </head>
+    <body>
+      <div class="container">
+
+        <header> <h1><a href="/index.html">Voluntaryism Blog</a></h1>
+ </header>
+
+        <main>
+            <h1>About James Wagner</h1>
+
+            <p>Voluntaryist, father, husband, brother, son and pilot. Looking
+to spread the idea that peaceful, voluntary cooperation is always
+the best choice.</p>
+
+        </main>
+
+        <footer> 
+<div class="bottom">
+    <div class="bottom-section">
+        <p><a href="/index.html">Back to Index</a></p>
+    </div>
+
+    <div class="bottom-section">
+        <p><a href="/about/">About James Wagner</a></p>
+    </div>
+
+    <div class="bottom-section">
+        <p>Thanks for reading</p>
+    </div>
+
+</div>
+ </footer>
+      </div>
+    </body>
+</html>
